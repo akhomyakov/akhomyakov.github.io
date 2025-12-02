@@ -18,7 +18,6 @@ const nextConfig = {
     return config;
   },
 
-  // existing tuning
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
@@ -27,17 +26,14 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  // better for static hosting like GitHub Pages
+  // Good for static hosting
   trailingSlash: true,
 
-  // tell Next to produce a static export when we run `next build`
-  // (GitHub Pages can then serve the output as plain files)
+  // Static export for GitHub Pages
   output: 'export',
 
-  // static-export-friendly image config
+  // Make next/image work with static export
   images: {
-    // disable the on-demand Image Optimization API, which doesn't exist in static export
-    // this tells Next to emit plain <img> tags
     unoptimized: true,
     remotePatterns: [
       {
