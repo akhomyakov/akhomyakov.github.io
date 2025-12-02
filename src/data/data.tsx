@@ -69,18 +69,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Andrey Khomyakov.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100"> IT Infrastructure and Operations Executive / IT Network and Infrastructure Architect</strong>, currently working
+        at <strong className="text-stone-100">Netris Inc</strong> helping AI Cloud operators build and run dynamic, multi-tenant GPU clouds — the kind that actually generate revenue.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Outside of work you will find me spending time with my family and learning to be a better human.
       </p>
     </>
   ),
@@ -108,12 +105,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Orange County, CA', Icon: MapIcon},
+    {label: 'Age', text: 'Too soon old, too late smart', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'U.S.A.', Icon: FlagIcon},
+    {label: 'Interests', text: 'Italy, Cycling, Reading', Icon: SparklesIcon},
+    {label: 'Study', text: 'Herzing College - Madison', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Netris, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -130,11 +127,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'French',
-        level: 4,
+        level: 2,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Italian',
+        level: 7,
       },
     ],
   },
