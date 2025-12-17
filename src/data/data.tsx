@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Andrey Khomyakov Resume',
+  description: "Professional profile and resume of Andrey Khomyakov, IT Infrastructure and Operations Executive / IT Network and Infrastructure Architect.",
 };
 
 /**
@@ -101,9 +101,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I enjoy bringing order to chaos. Whether that's designing and building complex network architectures, optimizing IT operations, or simply organizing my home office, I find satisfaction in creating systems that work efficiently and effectively.`,
   aboutItems: [
     {label: 'Location', text: 'Orange County, CA', Icon: MapIcon},
     {label: 'Age', text: 'Too soon old, too late smart', Icon: CalendarIcon},
@@ -126,6 +124,10 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
+        name: 'Russian',
+        level: 10,
+      },
+      {
         name: 'French',
         level: 2,
       },
@@ -136,53 +138,70 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Network engineering and architecture',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'Routing & Switching (EVPN, BGP, OSPF, EIGRP, MPLS, DMVPN)',
+        level: 8,
       },
       {
-        name: 'Typescript',
+        name: 'Edge Services (Firewalling, VPN, Load Balancing, NAT)',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Infrastructure Services (DHCP, DNS, IPAM)',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Public Cloud Platforms',
+    skills: [
+      {
+        name: 'AWS',
+        level: 8,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+      },
+      {
+        name: 'GCP',
+        level: 2,
+      },
+    ],
+  },
+  {
+    name: 'Infrastructure as Code & Automation',
+    skills: [
+      {
+        name: 'Scriptng (Python, Bash, PowerShell)',
+        level: 7,
+      },
+      {
+        name: 'Puppet, SaltStack, Ansible, Terraform',
+        level: 5,
+      },
+      {
+        name: 'Code Versioning (Git)',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Business and Soft Skills',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'Public Speaking',
+        level: 7,
       },
       {
-        name: 'Rust',
+        name: 'Budgeting, Accounting & Forecasting',
         level: 5,
       },
       {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'Communication & Leadership',
+        level: 7,
       },
     ],
   },
