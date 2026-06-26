@@ -92,6 +92,15 @@ export const aboutData: About = {
         At athenahealth, I inherited a technically elegant network that was dangerously fragile — one glitch away from a full data center outage. I led the re-architecture to a scalable, vendor-neutral design, built the deployment and automation patterns to make it operationally safe, and delivered a network that could grow with the business while saving millions in cost.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Another principle that quietly influences much of my work is systems thinking beyond technology. I’ve always been fascinated by how complex systems behave, whether they involve computer networks, organizations, products, or personal finance. At their core, they all operate under the same constraints: resources are finite, trade-offs are unavoidable, incentives matter, and small decisions compound over time.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        That perspective shaped not only my engineering work but also how I manage my own life. I enjoy building durable systems that are measurable, predictable, and resilient. I maintain detailed financial models, approach accounting with the same discipline I apply to infrastructure, and make decisions based on long-term outcomes rather than short-term optimization.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I naturally gravitate toward first-principles thinking. Rather than accepting existing processes, architectures, or business practices simply because they are familiar, I prefer to step back, identify the underlying objectives, and rebuild my understanding from the fundamental constraints. That approach often leads to simpler architectures, clearer communication, and solutions that remain effective long after individual technologies evolve.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Today I help leaders turn complex AI networking and infrastructure platforms into systems that are easier to understand, easier to operate, and easier to trust. If you want the next chapter of your platform to feel like a clean, strategic advance rather than another risky rewrite, that’s the story I help teams write.
       </p>
     </>
@@ -166,10 +175,23 @@ export const education: TimelineItem[] = [
     content: <p>Foundational systems and infrastructure training that shaped my early approach to engineering, operations, and architecture.</p>,
   },
   {
-    date: '2017 - 2019',
-    location: 'Amazon Web Services',
-    title: 'AWS Certifications',
-    content: <p>AWS Solutions Architect, Developer, and Advanced Networking certifications that reinforced cloud-native thinking alongside on-prem networking expertise.</p>,
+    date: '2013 - 2024',
+    location: 'Professional Certifications',
+    title: 'Cisco, AWS, and Leadership Credentials',
+    content: (
+      <div>
+        <p>Formal certifications and training demonstrating infrastructure, cloud, and leadership expertise. Some credentials have since expired, but they reflect the breadth of technical development and professional growth.</p>
+        <ul className="mt-3 ml-5 list-disc text-left">
+          <li>Cisco Certified Network Professional | 2013 - 2021</li>
+          <li>AWS Certified Solutions Architect - Associate | 2017 - 2019</li>
+          <li>AWS Certified Developer - Associate | 2017 - 2019</li>
+          <li>AWS Certified Advanced Networking - Specialty | 2017 - 2019</li>
+          <li>LinkedIn Learning: Becoming an Impactful and Influential Leader | 2021</li>
+          <li>LinkedIn Learning: Accounting Foundations | 2023</li>
+          <li>LinkedIn Learning: Introduction to Bookkeeping | 2024</li>
+        </ul>
+      </div>
+    ),
   },
 ];
 
@@ -192,61 +214,22 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'October 2024 - Present',
-    location: 'Stratovium',
-    title: 'Fractional IT Executive',
-    content: (
-      <p>
-        Partner with leadership teams to align business strategy, infrastructure execution, and vendor decisions. I help organizations get unstuck, simplify priorities, and make practical technology investments.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2025 - October 2025',
-    location: 'MR2 Solutions',
-    title: 'Information Technology Consultant',
-    content: (
-      <p>
-        Served as a trusted technical extension for clients, leading infrastructure design, vendor strategy, and project delivery. I focused on clarity, accountability, and operational efficiency across systems and teams.
-      </p>
-    ),
-  },
-  {
-    date: 'September 2022 - October 2024',
+    date: 'September 2015 - October 2024',
     location: 'athenahealth Inc.',
-    title: 'Director of Infrastructure Architecture',
+    title: 'Senior Network Design Engineer → Director of Infrastructure Architecture',
     content: (
       <div>
         <p>
-          Led hybrid cloud architecture, compliance-ready infrastructure, and core platform modernization while aligning technical delivery with business goals.
+          Joined athenahealth as a Senior Network Design Engineer and progressed into Director of Infrastructure Architecture. I led network and infrastructure modernization across hybrid cloud, data centers, and platform operations.
         </p>
         <ul className="mt-3 ml-5 list-disc text-left">
           <li>Designed and led deployment of scalable hybrid cloud infrastructure connecting AWS public cloud, AWS Outposts, Kubernetes environments, and legacy on-premises systems.</li>
           <li>Built AWS EKS platforms and automated CI/CD pipelines using Terraform, Jenkins, and Ansible.</li>
           <li>Re-architected data center networking into spine-leaf fabrics with whitebox switching, reducing per-port cost by 75% and increasing capacity by 4x.</li>
           <li>Implemented EVPN overlay and SDN architectures using VMware NSX-T, and strengthened security zoning, ECMP routing, and operational scalability.</li>
+          <li>Delivered resilient, vendor-neutral infrastructure that reduced operational risk, simplified day-two operations, and supported fast business growth.</li>
         </ul>
       </div>
-    ),
-  },
-  {
-    date: 'May 2017 - September 2022',
-    location: 'athenahealth Inc.',
-    title: 'Director of Network Architecture',
-    content: (
-      <p>
-        Directed enterprise network strategy, spine-and-leaf data center modernization, and SDN transformation. My team delivered scalable, resilient infrastructure that reduced risk, simplified operations, and supported fast growth.
-      </p>
-    ),
-  },
-  {
-    date: 'May 2015 - May 2017',
-    location: 'athenahealth Inc.',
-    title: 'Senior Network Design Engineer',
-    content: (
-      <p>
-        Executed infrastructure modernization projects that reduced last-mile costs and enabled large-scale data center expansion. I built lab-driven validation workflows and enabled the team to operate new network architectures safely.
-      </p>
     ),
   },
   {
