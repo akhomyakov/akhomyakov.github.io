@@ -309,12 +309,20 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'A practical approach to complexity',
-      text: 'The best infrastructure products make extraordinarily complex systems feel understandable, predictable, and almost boring to operate.',
+      name: 'Nicholas Kucharek',
+      text: 'Andrey is a thoughtful and caring professional with a strong sense of what is right—not just technically, but also in fostering collaboration, knowledge-sharing, and best practices.',
     },
     {
-      name: 'Technical clarity matters',
-      text: 'Clear documentation and reference architecture are among the highest forms of engineering because they let teams move faster with confidence.',
+      name: 'Rob Round',
+      text: 'He consistently impressed me with his technical expertise. Andrey creates solutions that balance business needs with long-term scalability, and his transparent communication helps teams work through challenges with clarity.',
+    },
+    {
+      name: 'Cameron King',
+      text: 'Andrey is an exceptional network architect who comes up with innovative solutions for the future and advances the state of the art within cloud infrastructure engineering.',
+    },
+    {
+      name: 'Brian Lubelczyk',
+      text: 'Andrey leads by example with exceptional skill, clear communication, and an inspiring dedication that makes him one of the best team members I have worked with.',
     },
   ],
 };
