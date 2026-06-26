@@ -9,10 +9,6 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -21,7 +17,6 @@ import {
   ContactType,
   Hero,
   HomepageMeta,
-  PortfolioItem,
   SkillGroup,
   Social,
   TestimonialSection,
@@ -44,7 +39,6 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -71,8 +65,8 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: `#${SectionId.Portfolio}`,
-      text: 'Selected work',
+      href: `#${SectionId.Resume}`,
+      text: 'See experience',
       primary: true,
     },
     {
@@ -149,37 +143,6 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Athenahealth data center modernization',
-    description:
-      'Rebuilt a fragile legacy fabric into a scalable spine-and-leaf network, cutting per-port cost while increasing backbone throughput and resilience for five years of growth.',
-    url: `#${SectionId.Portfolio}`,
-    image: porfolioImage1,
-  },
-  {
-    title: 'Santander branch resiliency',
-    description:
-      'Modernized branch connectivity with dynamic broadband VPN and cellular failover, reducing downtime and eliminating costly field dispatches for branch operations.',
-    url: `#${SectionId.Portfolio}`,
-    image: porfolioImage2,
-  },
-  {
-    title: 'AWS Outpost Kubernetes delivery',
-    description:
-      'Delivered production-ready Kubernetes infrastructure on AWS Outpost in 90 days, aligning distributed teams, stakeholders, and technical operations across a critical transformation.',
-    url: `#${SectionId.Portfolio}`,
-    image: porfolioImage3,
-  },
-  {
-    title: 'Netris product strategy and enablement',
-    description:
-      'Turned platform complexity into operational clarity through documentation, reference architectures, and product decisions that help engineers deploy and operate AI networking infrastructure.',
-    url: `#${SectionId.Portfolio}`,
-    image: porfolioImage4,
-  },
-];
-
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
@@ -205,7 +168,7 @@ export const experience: TimelineItem[] = [
     title: 'Principal Product Manager',
     content: (
       <p>
-        Shape product direction and technical enablement for modern AI networking. I translate complex platform capabilities into usable documentation, reference architectures, and product strategy that engineering and operations teams can rely on.
+        Shape product direction and operator enablement for a commercial AI networking platform. I help translate infrastructure complexity into usable platform strategy, documentation, and customer-facing product outcomes.
       </p>
     ),
   },
@@ -215,17 +178,107 @@ export const experience: TimelineItem[] = [
     title: 'Fractional IT Executive',
     content: (
       <p>
-        Help leaders bridge business priorities and infrastructure execution without the overhead of full-time engagement. I focus on clarity, alignment, and practical outcomes.
+        Partner with leadership teams to align business strategy, infrastructure execution, and vendor decisions. I help organizations get unstuck, simplify priorities, and make practical technology investments.
       </p>
     ),
   },
   {
-    date: 'May 2015 - September 2022',
+    date: 'March 2025 - October 2025',
+    location: 'MR2 Solutions',
+    title: 'Information Technology Consultant',
+    content: (
+      <p>
+        Served as a trusted technical extension for clients, leading infrastructure design, vendor strategy, and project delivery. I focused on clarity, accountability, and operational efficiency across systems and teams.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2022 - October 2024',
     location: 'athenahealth Inc.',
     title: 'Director of Infrastructure Architecture',
     content: (
       <p>
-        Led hybrid cloud architecture, network modernization, and operational improvements for a global healthcare platform. My team built systems that were easier to operate, audit, and scale.
+        Led hybrid cloud architecture, compliance-ready infrastructure, and core platform modernization. I aligned technical delivery with strategic business goals while making systems easier to operate and audit.
+      </p>
+    ),
+  },
+  {
+    date: 'May 2017 - September 2022',
+    location: 'athenahealth Inc.',
+    title: 'Director of Network Architecture',
+    content: (
+      <p>
+        Directed enterprise network strategy, spine-and-leaf data center modernization, and SDN transformation. My team delivered scalable, resilient infrastructure that reduced risk, simplified operations, and supported fast growth.
+      </p>
+    ),
+  },
+  {
+    date: 'May 2015 - May 2017',
+    location: 'athenahealth Inc.',
+    title: 'Senior Network Design Engineer',
+    content: (
+      <p>
+        Executed infrastructure modernization projects that reduced last-mile costs and enabled large-scale data center expansion. I built lab-driven validation workflows and enabled the team to operate new network architectures safely.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2011 - March 2015',
+    location: 'Santander Bank',
+    title: 'Network Team Lead',
+    content: (
+      <p>
+        Led network operations for 750 branches and 1000+ ATMs, modernizing branch connectivity, deployment standards, and operational workflows. I helped reduce downtime, speed deployments, and improve network compliance.
+      </p>
+    ),
+  },
+  {
+    date: 'December 2009 - March 2011',
+    location: 'Massachusetts College of Pharmacy and Health Sciences',
+    title: 'Senior Network Engineer',
+    content: (
+      <p>
+        Managed campus-wide WAN/LAN infrastructure, Wi-Fi, and security systems across multiple buildings. I improved redundancy, standardization, and network visibility while supporting academic and administrative services.
+      </p>
+    ),
+  },
+  {
+    date: 'October 2009 - December 2009',
+    location: 'Cambridge Systematics',
+    title: 'Network Engineer',
+    content: (
+      <p>
+        Supported PBX and network infrastructure while optimizing WAN voice quality. I also improved cabling and network documentation to enhance reliability and manageability.
+      </p>
+    ),
+  },
+  {
+    date: 'August 2008 - September 2009',
+    location: 'Integrity Interactive',
+    title: 'Network Engineer',
+    content: (
+      <p>
+        Delivered networking, virtualization, and security infrastructure for a multi-site environment. I introduced standardization, monitoring, and redundancy to support growth and improve availability.
+      </p>
+    ),
+  },
+  {
+    date: 'August 2007 - July 2008',
+    location: 'Epic Systems',
+    title: 'Network Engineer',
+    content: (
+      <p>
+        Supported enterprise network operations across data centers and campuses, focusing on MAN, QoS, VPN, and wireless reliability. This role shaped my early career in scalable infrastructure and documentation.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2005 - August 2007',
+    location: '5Nines LLC',
+    title: 'Data Center Technician',
+    content: (
+      <p>
+        Managed colo and hosting infrastructure, including cabling, servers, networking, and virtualization. I built the foundation for my hands-on approach to resilient infrastructure delivery.
       </p>
     ),
   },
