@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -29,7 +30,7 @@ import {
 export const homePageMeta: HomepageMeta = {
   title: 'Andrey Khomyakov — Product Manager for AI Networking',
   description:
-    'Principal product manager and infrastructure strategist at Netris. I help AI cloud operators, platform teams, and infrastructure leaders simplify complex networking, reduce operational risk, and build platforms that are easier to operate.',
+    'Product manager and infrastructure strategist at Netris. I help AI cloud operators, platform teams, and infrastructure leaders simplify complex networking, reduce operational risk, and build platforms that are easier to operate.',
 };
 
 /**
@@ -82,10 +83,21 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description:
-    'Technology has never been the destination for me. It has always been the language through which organizations solve difficult problems. I build clarity where systems, people, and strategy intersect — turning infrastructure decisions into reliable business outcomes.',
+  description: (
+    <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        For the last 15 years, I have chosen depth over churn. I stayed long enough at my companies to learn the business, not just the technology, and used that insight to make infrastructure a reliable source of momentum instead of a recurring risk.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        At athenahealth, I inherited a technically elegant network that was dangerously fragile — one glitch away from a full data center outage. I led the re-architecture to a scalable, vendor-neutral design, built the deployment and automation patterns to make it operationally safe, and delivered a network that could grow with the business while saving millions in cost.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Today I help leaders turn complex AI networking and infrastructure platforms into systems that are easier to understand, easier to operate, and easier to trust. If you want the next chapter of your platform to feel like a clean, strategic advance rather than another risky rewrite, that’s the story I help teams write.
+      </p>
+    </>
+  ),
   aboutItems: [
-    {label: 'Current', text: 'Principal Product Manager, Netris', Icon: BuildingOffice2Icon},
+    {label: 'Current', text: 'Product Manager, Netris', Icon: BuildingOffice2Icon},
     {label: 'Focus', text: 'AI networking, multi-tenancy, hybrid cloud', Icon: SparklesIcon},
     {label: 'Specialty', text: 'Product strategy, architecture, documentation', Icon: AcademicCapIcon},
     {label: 'Experience', text: '20+ years', Icon: CalendarIcon},
@@ -163,13 +175,20 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'July 2025 - Present',
+    date: 'June 2025 - Present',
     location: 'Netris Inc.',
-    title: 'Principal Product Manager',
+    title: 'Product Manager',
     content: (
-      <p>
-        Shape product direction and operator enablement for a commercial AI networking platform. I help translate infrastructure complexity into usable platform strategy, documentation, and customer-facing product outcomes.
-      </p>
+      <div>
+        <p>
+          Drive product direction and technical workflows for AI infrastructure networking and multi-tenant data center orchestration platforms.
+        </p>
+        <ul className="mt-3 ml-5 list-disc text-left">
+          <li>Collaborate with engineering and architecture teams on Ethernet fabric automation, EVPN/VXLAN networking, server onboarding, tenant isolation, and AI factory infrastructure workflows.</li>
+          <li>Author technical documentation, deployment guides, infrastructure reference architectures, and customer-facing solution materials for AI infrastructure operators.</li>
+          <li>Translate customer operational requirements into workflows, user stories, topology models, and deployment guidance for GPU and AI platform operators.</li>
+        </ul>
+      </div>
     ),
   },
   {
@@ -197,9 +216,17 @@ export const experience: TimelineItem[] = [
     location: 'athenahealth Inc.',
     title: 'Director of Infrastructure Architecture',
     content: (
-      <p>
-        Led hybrid cloud architecture, compliance-ready infrastructure, and core platform modernization. I aligned technical delivery with strategic business goals while making systems easier to operate and audit.
-      </p>
+      <div>
+        <p>
+          Led hybrid cloud architecture, compliance-ready infrastructure, and core platform modernization while aligning technical delivery with business goals.
+        </p>
+        <ul className="mt-3 ml-5 list-disc text-left">
+          <li>Designed and led deployment of scalable hybrid cloud infrastructure connecting AWS public cloud, AWS Outposts, Kubernetes environments, and legacy on-premises systems.</li>
+          <li>Built AWS EKS platforms and automated CI/CD pipelines using Terraform, Jenkins, and Ansible.</li>
+          <li>Re-architected data center networking into spine-leaf fabrics with whitebox switching, reducing per-port cost by 75% and increasing capacity by 4x.</li>
+          <li>Implemented EVPN overlay and SDN architectures using VMware NSX-T, and strengthened security zoning, ECMP routing, and operational scalability.</li>
+        </ul>
+      </div>
     ),
   },
   {
@@ -225,11 +252,19 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2011 - March 2015',
     location: 'Santander Bank',
-    title: 'Network Team Lead',
+    title: 'Network Team Lead and Architect',
     content: (
-      <p>
-        Led network operations for 750 branches and 1000+ ATMs, modernizing branch connectivity, deployment standards, and operational workflows. I helped reduce downtime, speed deployments, and improve network compliance.
-      </p>
+      <div>
+        <p>
+          Designed and operated large-scale multi-entity infrastructure supporting 750+ branches and 1000+ ATMs.
+        </p>
+        <ul className="mt-3 ml-5 list-disc text-left">
+          <li>Built MPLS, VRF, MP-BGP, and DMVPN enterprise networking environments focused on resiliency, scalability, and operational consistency.</li>
+          <li>Led WAN modernization, routing architecture, remote connectivity, wireless networking, and firewall infrastructure design.</li>
+          <li>Implemented enterprise authentication and access control using 802.1x, TACACS+, and RADIUS.</li>
+          <li>Managed Cisco ASA and CheckPoint VSX firewall environments, while mentoring engineers and improving incident response workflows.</li>
+        </ul>
+      </div>
     ),
   },
   {
@@ -320,6 +355,11 @@ export const contact: ContactSection = {
       text: 'akhomyakov',
       href: 'https://github.com/akhomyakov',
     },
+    {
+      type: ContactType.LinkedIn,
+      text: 'andreykhomyakov',
+      href: 'https://www.linkedin.com/in/andreykhomyakov/',
+    },
   ],
 };
 
@@ -328,4 +368,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/akhomyakov'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/andreykhomyakov/'},
 ];

@@ -29,8 +29,8 @@ const nextConfig = {
   // Good for static hosting
   trailingSlash: true,
 
-  // Static export for GitHub Pages
-  output: 'export',
+  // Static export for GitHub Pages in production build only
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
 
   // Make next/image work with static export
   images: {
