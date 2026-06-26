@@ -44,8 +44,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Andrey Khomyakov Resume',
-  description: "Professional profile and resume of Andrey Khomyakov, IT Infrastructure and Operations Executive / IT Network and Infrastructure Architect.",
+  title: 'Andrey Khomyakov — Product Manager for AI Networking',
+  description:
+    'Principal product manager and infrastructure strategist at Netris. I help AI cloud operators, platform teams, and infrastructure leaders simplify complex networking, reduce operational risk, and build platforms that are easier to operate.',
 };
 
 /**
@@ -73,24 +74,22 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100"> IT Infrastructure and Operations Executive / IT Network and Infrastructure Architect</strong>, currently working
-        at <strong className="text-stone-100">Netris Inc</strong> helping AI Cloud operators build and run dynamic, multi-tenant GPU clouds — the kind that actually generate revenue.
+        I help AI cloud operators, platform teams, and infrastructure leaders turn complex data center networking systems into predictable, scalable business platforms.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Outside of work you will find me spending time with my family and learning to be a better human.
+        At Netris, I sit at the intersection of product strategy, systems architecture, and technical enablement — making infrastructure products feel understandable, predictable, and almost boring to operate.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: `#${SectionId.Portfolio}`,
+      text: 'Selected work',
       primary: true,
-      Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Connect',
       primary: false,
     },
   ],
@@ -101,14 +100,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I enjoy bringing order to chaos. Whether that's designing and building complex network architectures, optimizing IT operations, or simply organizing my home office, I find satisfaction in creating systems that work efficiently and effectively.`,
+  description:
+    'Technology has never been the destination for me. It has always been the language through which organizations solve difficult problems. I build clarity where systems, people, and strategy intersect — turning infrastructure decisions into reliable business outcomes.',
   aboutItems: [
+    {label: 'Current', text: 'Principal Product Manager, Netris', Icon: BuildingOffice2Icon},
+    {label: 'Focus', text: 'AI networking, multi-tenancy, hybrid cloud', Icon: SparklesIcon},
+    {label: 'Specialty', text: 'Product strategy, architecture, documentation', Icon: AcademicCapIcon},
+    {label: 'Experience', text: '20+ years', Icon: CalendarIcon},
     {label: 'Location', text: 'Orange County, CA', Icon: MapIcon},
-    {label: 'Age', text: 'Too soon old, too late smart', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'U.S.A.', Icon: FlagIcon},
-    {label: 'Interests', text: 'Italy, Cycling, Reading', Icon: SparklesIcon},
-    {label: 'Study', text: 'Herzing College - Madison', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Netris, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Approach', text: 'Systems thinking and operational clarity', Icon: FlagIcon},
   ],
 };
 
@@ -117,92 +117,43 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Product & Strategy',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'Russian',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 2,
-      },
-      {
-        name: 'Italian',
-        level: 7,
-      },
+      {name: 'Technical product strategy', level: 9},
+      {name: 'Reference architecture', level: 8},
+      {name: 'Operational enablement', level: 9},
     ],
   },
   {
-    name: 'Network engineering and architecture',
+    name: 'Network & Platform',
     skills: [
-      {
-        name: 'Routing & Switching (EVPN, BGP, OSPF, EIGRP, MPLS, DMVPN)',
-        level: 8,
-      },
-      {
-        name: 'Edge Services (Firewalling, VPN, Load Balancing, NAT)',
-        level: 7,
-      },
-      {
-        name: 'Infrastructure Services (DHCP, DNS, IPAM)',
-        level: 8,
-      },
+      {name: 'EVPN-VXLAN fabrics', level: 9},
+      {name: 'Multi-tenant networking', level: 8},
+      {name: 'GPU / AI cloud infrastructure', level: 8},
     ],
   },
   {
-    name: 'Public Cloud Platforms',
+    name: 'Cloud & Automation',
     skills: [
-      {
-        name: 'AWS',
-        level: 8,
-      },
-      {
-        name: 'Azure',
-        level: 5,
-      },
-      {
-        name: 'GCP',
-        level: 2,
-      },
+      {name: 'AWS / Outpost', level: 8},
+      {name: 'Kubernetes and day-two operations', level: 8},
+      {name: 'APIs and automation', level: 8},
     ],
   },
   {
-    name: 'Infrastructure as Code & Automation',
+    name: 'Communication',
     skills: [
-      {
-        name: 'Scriptng (Python, Bash, PowerShell)',
-        level: 7,
-      },
-      {
-        name: 'Puppet, SaltStack, Ansible, Terraform',
-        level: 5,
-      },
-      {
-        name: 'Code Versioning (Git)',
-        level: 6,
-      },
+      {name: 'Technical documentation', level: 9},
+      {name: 'Cross-functional translation', level: 9},
+      {name: 'Team enablement', level: 8},
     ],
   },
   {
-    name: 'Business and Soft Skills',
+    name: 'Business Outcomes',
     skills: [
-      {
-        name: 'Public Speaking',
-        level: 7,
-      },
-      {
-        name: 'Budgeting, Accounting & Forecasting',
-        level: 5,
-      },
-      {
-        name: 'Communication & Leadership',
-        level: 7,
-      },
+      {name: 'Cost optimization', level: 8},
+      {name: 'Compliance and audit readiness', level: 8},
+      {name: 'Resilience and reliability', level: 9},
     ],
   },
 ];
@@ -212,70 +163,32 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Athenahealth data center modernization',
+    description:
+      'Rebuilt a fragile legacy fabric into a scalable spine-and-leaf network, cutting per-port cost while increasing backbone throughput and resilience for five years of growth.',
+    url: `#${SectionId.Portfolio}`,
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Santander branch resiliency',
+    description:
+      'Modernized branch connectivity with dynamic broadband VPN and cellular failover, reducing downtime and eliminating costly field dispatches for branch operations.',
+    url: `#${SectionId.Portfolio}`,
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'AWS Outpost Kubernetes delivery',
+    description:
+      'Delivered production-ready Kubernetes infrastructure on AWS Outpost in 90 days, aligning distributed teams, stakeholders, and technical operations across a critical transformation.',
+    url: `#${SectionId.Portfolio}`,
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Netris product strategy and enablement',
+    description:
+      'Turned platform complexity into operational clarity through documentation, reference architectures, and product decisions that help engineers deploy and operate AI networking infrastructure.',
+    url: `#${SectionId.Portfolio}`,
     image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -284,39 +197,47 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2004 - 2007',
+    location: 'Herzing University - Madison',
+    title: 'B.S. Information Technology',
+    content: <p>Foundational systems and infrastructure training that shaped my early approach to engineering, operations, and architecture.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2017 - 2019',
+    location: 'Amazon Web Services',
+    title: 'AWS Certifications',
+    content: <p>AWS Solutions Architect, Developer, and Advanced Networking certifications that reinforced cloud-native thinking alongside on-prem networking expertise.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2025 - Present',
+    location: 'Netris Inc.',
+    title: 'Principal Product Manager',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Shape product direction and technical enablement for modern AI networking. I translate complex platform capabilities into usable documentation, reference architectures, and product strategy that engineering and operations teams can rely on.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'October 2024 - Present',
+    location: 'Stratovium',
+    title: 'Fractional IT Executive',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Help leaders bridge business priorities and infrastructure execution without the overhead of full-time engagement. I focus on clarity, alignment, and practical outcomes.
+      </p>
+    ),
+  },
+  {
+    date: 'May 2015 - September 2022',
+    location: 'athenahealth Inc.',
+    title: 'Director of Infrastructure Architecture',
+    content: (
+      <p>
+        Led hybrid cloud architecture, network modernization, and operational improvements for a global healthcare platform. My team built systems that were easier to operate, audit, and scale.
       </p>
     ),
   },
@@ -329,19 +250,12 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'A practical approach to complexity',
+      text: 'The best infrastructure products make extraordinarily complex systems feel understandable, predictable, and almost boring to operate.',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Technical clarity matters',
+      text: 'Clear documentation and reference architecture are among the highest forms of engineering because they let teams move faster with confidence.',
     },
   ],
 };
@@ -351,28 +265,19 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Let’s make it easier.',
+  description:
+    'If your infrastructure or AI networking platform needs more clarity, more alignment, and less operational friction, start here. I work with executives and engineering leaders who need practical, product-focused infrastructure strategy.',
   items: [
     {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Orange County, CA',
+      href: 'https://www.google.com/maps/place/Orange+County,+CA',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'akhomyakov',
+      href: 'https://github.com/akhomyakov',
     },
   ],
 };
@@ -381,9 +286,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/akhomyakov'},
 ];

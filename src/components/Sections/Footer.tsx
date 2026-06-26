@@ -21,14 +21,14 @@ const Footer: FC = memo(() => (
       </div>
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://reactresume.com">
+        href="https://github.com/akhomyakov">
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span>
-          Provided by <span className="text-white">React</span>
-          <span className="italic text-yellow">Resume</span>
+          Crafted by <span className="text-white">Andrey</span>
+          <span className="italic text-yellow">Khomyakov</span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright {currentYear} Tim Baker</span>
+      <span className="text-sm text-neutral-700">© {currentYear} Andrey Khomyakov</span>
     </div>
   </div>
 ));
