@@ -71,6 +71,12 @@ export const heroData: Hero = {
       primary: true,
     },
     {
+      href: '/resume.pdf',
+      text: 'Download resume',
+      primary: false,
+      download: true,
+    },
+    {
       href: `#${SectionId.Contact}`,
       text: 'Connect',
       primary: false,
