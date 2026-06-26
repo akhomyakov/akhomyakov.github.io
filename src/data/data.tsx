@@ -53,14 +53,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Andrey Khomyakov.`,
+  name: `I turn complex infrastructure into systems people can understand, operate, and trust.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I help AI cloud operators, platform teams, and infrastructure leaders turn complex data center networking systems into predictable, scalable business platforms.
+        Andrey Khomyakov is a product manager and infrastructure strategist focused on AI networking, cloud-like data center operations, and technical enablement for complex platforms.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        At Netris, I sit at the intersection of product strategy, systems architecture, and technical enablement — making infrastructure products feel understandable, predictable, and almost boring to operate.
+        At Netris, I work across product strategy, systems architecture, documentation, and field enablement to make advanced infrastructure capabilities easier to deploy, explain, and operate.
       </p>
     </>
   ),
@@ -92,22 +92,16 @@ export const aboutData: About = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        For the last 15 years, I have chosen depth over churn. I stayed long enough at my companies to learn the business, not just the technology, and used that insight to make infrastructure a reliable source of momentum instead of a recurring risk.
+        For more than 20 years, I have worked at the intersection of infrastructure, architecture, operations, and product. My career has moved from hands-on network engineering to data center architecture, hybrid cloud strategy, technical product management, and AI networking enablement, but the pattern has stayed consistent: I help teams reduce complexity and make better technical decisions.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        At athenahealth, I inherited a technically elegant network that was dangerously fragile — one glitch away from a full data center outage. I led the re-architecture to a scalable, vendor-neutral design, built the deployment and automation patterns to make it operationally safe, and delivered a network that could grow with the business while saving millions in cost.
+        I tend to stay with hard problems long enough to understand the business behind the technology. At athenahealth, that meant helping re-architect fragile data center networks into scalable, vendor-neutral platforms that supported growth, reduced cost, and improved operational resilience. At Netris, it means helping turn advanced networking capabilities into product strategy, reference architectures, documentation, and deployment guidance that engineers and customers can actually use.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Another principle that quietly influences much of my work is systems thinking beyond technology. I’ve always been fascinated by how complex systems behave, whether they involve computer networks, organizations, products, or personal finance. At their core, they all operate under the same constraints: resources are finite, trade-offs are unavoidable, incentives matter, and small decisions compound over time.
+        Much of my work is translation. Engineering, product, sales, operations, finance, and executive teams often describe the same system in different languages. I help create the shared vocabulary, decision framework, and technical clarity required to move from ambiguity to execution.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        That perspective shaped not only my engineering work but also how I manage my own life. I enjoy building durable systems that are measurable, predictable, and resilient. I maintain detailed financial models, approach accounting with the same discipline I apply to infrastructure, and make decisions based on long-term outcomes rather than short-term optimization.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I naturally gravitate toward first-principles thinking. Rather than accepting existing processes, architectures, or business practices simply because they are familiar, I prefer to step back, identify the underlying objectives, and rebuild my understanding from the fundamental constraints. That approach often leads to simpler architectures, clearer communication, and solutions that remain effective long after individual technologies evolve.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Today I help leaders turn complex AI networking and infrastructure platforms into systems that are easier to understand, easier to operate, and easier to trust. If you want the next chapter of your platform to feel like a clean, strategic advance rather than another risky rewrite, that’s the story I help teams write.
+        My thinking is strongly shaped by first principles and systems discipline. Whether I am evaluating an infrastructure architecture, a product workflow, a business trade-off, or a financial model, I want to understand the underlying constraints, incentives, risks, and compounding effects. Clear systems produce better decisions. Better decisions produce calmer operations.
       </p>
     </>
   ),
