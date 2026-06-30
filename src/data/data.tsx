@@ -53,14 +53,11 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I turn complex infrastructure into systems people can understand, operate, and trust.`,
+  name: `I reduce the cognitive load of complex infrastructure.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I work at the intersection of infrastructure architecture, product strategy, and technical communication, with a current focus on AI networking and cloud-like data center operations.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        At Netris, I translate customer infrastructure problems into product workflows, reference architectures, and deployment guidance so teams can deploy and operate the platform with less ambiguity.
+        Through infrastructure architecture, product strategy, and technical communication for modern cloud and AI platforms.
       </p>
     </>
   ),
