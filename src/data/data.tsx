@@ -28,9 +28,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Andrey Khomyakov — Product Manager for AI Networking',
+  title: 'Andrey Khomyakov — AI Networking and Infrastructure Strategy',
   description:
-    'Product manager and infrastructure strategist at Netris. I help AI cloud operators, platform teams, and infrastructure leaders simplify complex networking, reduce operational risk, and build platforms that are easier to operate.',
+    'Infrastructure architect and product strategist at Netris. I help AI cloud operators, platform teams, and infrastructure leaders make complex networking easier to deploy, operate, and trust.',
 };
 
 /**
@@ -57,10 +57,10 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Andrey Khomyakov is a product manager and infrastructure strategist focused on AI networking, cloud-like data center operations, and technical enablement for complex platforms.
+        I work at the intersection of infrastructure architecture, product strategy, and technical communication, with a current focus on AI networking and cloud-like data center operations.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        At Netris, I work across product strategy, systems architecture, documentation, and field enablement to make advanced infrastructure capabilities easier to deploy, explain, and operate.
+        At Netris, I translate customer infrastructure problems into product workflows, reference architectures, and deployment guidance so teams can deploy and operate the platform with less ambiguity.
       </p>
     </>
   ),
@@ -92,26 +92,26 @@ export const aboutData: About = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        For more than 20 years, I have worked at the intersection of infrastructure, architecture, operations, and product. My career has moved from hands-on network engineering to data center architecture, hybrid cloud strategy, technical product management, and AI networking enablement, but the pattern has stayed consistent: I help teams reduce complexity and make better technical decisions.
+        For more than 20 years, I have worked where infrastructure, operations, architecture, and product meet. I started in hands-on network engineering and grew into data center architecture, hybrid cloud strategy, technical product management, and AI networking enablement. The through line has stayed consistent: reduce complexity so teams can make better technical decisions.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I tend to stay with hard problems long enough to understand the business behind the technology. At athenahealth, that meant helping re-architect fragile data center networks into scalable, vendor-neutral platforms that supported growth, reduced cost, and improved operational resilience. At Netris, it means helping turn advanced networking capabilities into product strategy, reference architectures, documentation, and deployment guidance that engineers and customers can actually use.
+        At athenahealth, that meant helping re-architect fragile data center networks into scalable, vendor-neutral platforms that supported growth, reduced cost, and improved operational resilience. At Netris, it means translating customer infrastructure problems into product workflows, deployment models, reference architectures, and enablement materials that help engineers and customers deploy and operate the platform successfully.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Much of my work is translation. Engineering, product, sales, operations, finance, and executive teams often describe the same system in different languages. I help create the shared vocabulary, decision framework, and technical clarity required to move from ambiguity to execution.
+        Much of my work is translation. Engineering, product, sales, operations, finance, and executive teams often see the same system through different constraints. I help turn those perspectives into shared vocabulary, decision criteria, and technical direction.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        My thinking is strongly shaped by first principles and systems discipline. Whether I am evaluating an infrastructure architecture, a product workflow, a business trade-off, or a financial model, I want to understand the underlying constraints, incentives, risks, and compounding effects. Clear systems produce better decisions. Better decisions produce calmer operations.
+        I design from the constraints that actually matter: topology, cost, risk, incentives, failure modes, and the people who have to operate the result. The best infrastructure reduces cognitive load. It makes complexity legible enough that teams can trust the system and each other.
       </p>
     </>
   ),
   aboutItems: [
     {label: 'Current', text: 'Product Manager, Netris', Icon: BuildingOffice2Icon},
     {label: 'Focus', text: 'AI networking, multi-tenancy, hybrid cloud', Icon: SparklesIcon},
-    {label: 'Specialty', text: 'Product strategy, architecture, documentation', Icon: AcademicCapIcon},
+    {label: 'Specialty', text: 'Product strategy, architecture, enablement', Icon: AcademicCapIcon},
     {label: 'Experience', text: '20+ years', Icon: CalendarIcon},
     {label: 'Location', text: 'Orange County, CA', Icon: MapIcon},
-    {label: 'Approach', text: 'Systems thinking and operational clarity', Icon: FlagIcon},
+    {label: 'Approach', text: 'Reduce cognitive load in complex systems', Icon: FlagIcon},
   ],
 };
 
@@ -120,44 +120,24 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Product & Strategy',
-    skills: [
-      {name: 'Technical product strategy', level: 9},
-      {name: 'Reference architecture', level: 8},
-      {name: 'Operational enablement', level: 9},
-    ],
+    name: 'Product & Technology Strategy',
+    skills: [{name: 'Product strategy'}, {name: 'Infrastructure strategy'}, {name: 'Systems thinking'}],
   },
   {
-    name: 'Network & Platform',
-    skills: [
-      {name: 'EVPN-VXLAN fabrics', level: 9},
-      {name: 'Multi-tenant networking', level: 8},
-      {name: 'GPU / AI cloud infrastructure', level: 8},
-    ],
+    name: 'AI & Network Architecture',
+    skills: [{name: 'AI networking'}, {name: 'GPU cloud infrastructure'}, {name: 'EVPN-VXLAN fabrics'}],
   },
   {
-    name: 'Cloud & Automation',
-    skills: [
-      {name: 'AWS / Outpost', level: 8},
-      {name: 'Kubernetes and day-two operations', level: 8},
-      {name: 'APIs and automation', level: 8},
-    ],
+    name: 'Cloud & Platform Operations',
+    skills: [{name: 'Hybrid cloud'}, {name: 'Multi-tenant platforms'}, {name: 'Kubernetes operations'}],
   },
   {
-    name: 'Communication',
-    skills: [
-      {name: 'Technical documentation', level: 9},
-      {name: 'Cross-functional translation', level: 9},
-      {name: 'Team enablement', level: 8},
-    ],
+    name: 'Deployment & Enablement',
+    skills: [{name: 'Deployment models'}, {name: 'Reference architectures'}, {name: 'Customer enablement'}],
   },
   {
-    name: 'Business Outcomes',
-    skills: [
-      {name: 'Cost optimization', level: 8},
-      {name: 'Compliance and audit readiness', level: 8},
-      {name: 'Resilience and reliability', level: 9},
-    ],
+    name: 'Communication & Alignment',
+    skills: [{name: 'Technical communication'}, {name: 'Cross-functional translation'}, {name: 'Organizational alignment'}],
   },
 ];
 
@@ -206,9 +186,9 @@ export const experience: TimelineItem[] = [
           Drive product direction and technical workflows for AI infrastructure networking and multi-tenant data center orchestration platforms.
         </p>
         <ul className="mt-3 ml-5 list-disc text-left">
-          <li>Collaborate with engineering and architecture teams on Ethernet fabric automation, EVPN/VXLAN networking, server onboarding, tenant isolation, and AI factory infrastructure workflows.</li>
-          <li>Author technical documentation, deployment guides, infrastructure reference architectures, and customer-facing solution materials for AI infrastructure operators.</li>
-          <li>Translate customer operational requirements into workflows, user stories, topology models, and deployment guidance for GPU and AI platform operators.</li>
+          <li>Translate customer infrastructure problems into product workflows, user stories, topology models, and deployment guidance for GPU and AI platform operators.</li>
+          <li>Define deployment models and reference architectures for Ethernet fabric automation, EVPN/VXLAN networking, server onboarding, tenant isolation, and AI factory workflows.</li>
+          <li>Develop technical enablement materials, including documentation, deployment guides, and customer-facing solution content, that help customers deploy and operate the Netris platform successfully.</li>
         </ul>
       </div>
     ),
@@ -334,7 +314,7 @@ export const testimonial: TestimonialSection = {
 export const contact: ContactSection = {
   headerText: 'Let’s make it easier.',
   description:
-    'If your infrastructure or AI networking platform needs more clarity, more alignment, and less operational friction, start here. I work with executives and engineering leaders who need practical, product-focused infrastructure strategy.',
+    'If your infrastructure or AI networking platform needs clearer decisions, better alignment, and less operational friction, start here. I work with executives and engineering leaders who need practical infrastructure strategy across architecture, product, and operations.',
   items: [
     {
       type: ContactType.Location,
